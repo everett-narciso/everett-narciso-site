@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Everett Narciso</title>
+  <meta name="description" content="Everett Narciso — artist portfolio.">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #fff;
+      color: #242424;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    a { color: inherit; text-decoration: none; }
+    a:hover, a:focus-visible {
+      text-decoration: underline;
+      text-underline-offset: .2em;
+    }
+    main {
+      width: min(calc(100% - 3rem), 70rem);
+      margin: 0 auto;
+      padding: 5.5rem 0 8rem;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 2.5rem);
+      line-height: 1.1;
+      letter-spacing: -.025em;
+    }
+    nav { margin-top: 2.75rem; font-size: 1.1rem; }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 2.5rem 2rem;
+      margin: 7rem auto 0;
+    }
+    .project img {
+      display: block;
+      width: 100%;
+      height: min(22rem, calc((100vw - 7rem) / 3));
+      object-fit: cover;
+    }
+    .project h2 { margin: .75rem 0 0; font-size: 1rem; font-weight: 400; }
+    @media (max-width: 720px) {
+      main { width: min(calc(100% - 2rem), 70rem); padding-top: 3.5rem; }
+      nav { margin-top: 2.5rem; }
+      .projects { grid-template-columns: 1fr; gap: 2.75rem; }
+      .project img { height: calc(100vw - 2rem - 15px); }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Everett Narciso</h1>
+    <nav>
+      <a href="info.html">Info</a>
+    </nav>
+    <div class="projects">
+      <a class="project" href="december.html">
+        <img src="images/21.jpg" width="1489" height="2048" alt="December series">
+        <h2>December</h2>
+      </a>
+      <a class="project" href="benson-cassell-gabor.html">
+        <img src="images/21.jpg" width="1489" height="2048" alt="Benson, Cassell, Gabor series">
+        <h2>Benson, Cassell, Gabor</h2>
+      </a>
+    </div>
+  </main>
+</body>
+</html>
